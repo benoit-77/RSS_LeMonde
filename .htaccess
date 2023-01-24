@@ -1,0 +1,15 @@
+# DirectoryIndex index.php
+# Options +FollowSymLinks
+RewriteEngine On
+# RewriteRule patate index.php   
+# RewriteRule permet de rediriger l'utilisateur ayant rentré patate dans l'url vers index.php
+# RewriteBase /rss/
+
+# RewriteRule economie http://rss/categories.php?cat=economie
+# RewriteRule entreprises http://rss/categories.php?cat=entreprises
+# RewriteRule cinema http://rss/categories.php?cat=cinema
+
+RewriteRule ^personalPage/([a-zA-Z_]+)/*$ personalPage.php?id=$1 [L]
+RewriteRule ^cat/([a-zA-Z_]+)/*$ categories.php?cat=$1 [L]
+
+# RewriteRule ^([a-zA-Z_]+)/*$ $1.php [L]
