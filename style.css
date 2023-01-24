@@ -1,0 +1,101 @@
+body {
+    font-family: 'Yeseva One', cursive;
+    background-color: rgba(189, 167, 60, 0.201);
+}
+
+h1 {
+    font-size: 4.5em;
+    text-align: center;
+    margin: 7%;
+    color: rgba(8, 31, 45, 0.863);
+}
+
+nav {
+    margin-bottom: 3em;
+}
+
+
+
+#pIntro {
+    margin: 0 0 5% 10%;
+    color: rgba(8, 31, 45, 0.863);
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(8, 31, 45, 0.863);
+    font-size: 2.5em;
+}
+
+.choice {
+    text-align: center;
+}
+
+.nbArts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.card-title {
+    font-size: 1.8em;
+}
+
+img {
+    width: 2em;
+    margin-bottom: 5%;
+    padding: 5%;
+    border: 2px solid rgba(8, 31, 45, 0.863);
+}
+
+#personalPage {
+    margin-top: 3em;
+}
+
+form {
+    margin-top: 3em;
+}
+
+legend {
+    margin: 2% 0 2% 30%;
+    font-size: 2em;
+}
+
+.choicesParameters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+button {
+    width: 20%;
+    margin: 5% 40%;
+}
+
+button {
+    background-color: rgba(8, 31, 45, 0.863); 
+    border-radius: 29px; 
+    border: 1px solid rgba(8, 31, 45, 0.863); 
+    color: white; 
+    font-size: 15px; 
+   padding: 10px 45px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    }
+    
+button:hover { 
+    background-color: white; 
+    color: #081F2D; 
+    border-color: #081F2D; 
+    transition: 0.3s; 
+   }
