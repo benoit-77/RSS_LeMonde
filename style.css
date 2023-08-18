@@ -1,31 +1,41 @@
 body {
     font-family: 'Yeseva One', cursive;
-    background-color: rgba(189, 167, 60, 0.201);
+    background-image: url("assets/img/white_paper_texture_v2.png");
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: 4em;
     text-align: center;
-    margin: 7%;
+    margin: 4%;
     color: rgba(8, 31, 45, 0.863);
 }
 
-nav {
-    margin-bottom: 3em;
+.navbar-nav {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.nav-item {
+    font-size: 1.2em;
+}
 
+hr {
+    width: 70%;
+    margin: 0 auto 4em auto;
+}
 
 #pIntro {
-    margin: 0 0 5% 10%;
+    margin: 0 0 2% 10%;
     color: rgba(8, 31, 45, 0.863);
     font-size: 1.2em;
     font-style: italic;
-    text-decoration: underline;
-    text-decoration-style: dashed;
 }
 
-h2 {
+.categoryTitle, h2 {
+    margin: 1.2em auto 1.5em auto;
     text-align: center;
     color: rgba(8, 31, 45, 0.863);
     font-size: 2.5em;
@@ -33,14 +43,26 @@ h2 {
 
 .choice {
     text-align: center;
+    font-size: 1.2em;
 }
 
-.nbArts {
+.NbArtChoice {
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    .NbArtChoice {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    }
 
 .card-title {
     font-size: 1.8em;
@@ -54,11 +76,8 @@ img {
 }
 
 #personalPage {
-    margin-top: 3em;
-}
-
-form {
-    margin-top: 3em;
+    text-align: center;
+    margin: 2em auto 1em auto;
 }
 
 legend {
@@ -77,18 +96,19 @@ label {
     font-size: 1.2em;
 }
 
-button {
-    width: 20%;
-    margin: 5% 40%;
+.NbArtIndex {
+    margin-left: 10px;
 }
 
 button {
+    width: 20%;
+    margin: 5% 40%;
     background-color: rgba(8, 31, 45, 0.863); 
     border-radius: 29px; 
     border: 1px solid rgba(8, 31, 45, 0.863); 
     color: white; 
     font-size: 15px; 
-   padding: 10px 45px; 
+    padding: 10px 45px; 
     cursor: pointer; 
     transition: 0.3s; 
     }

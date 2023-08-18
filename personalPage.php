@@ -50,40 +50,6 @@ foreach($rss as $flux) {
     $xml[] = simplexml_load_file($flux);
 }
 
-// if ((!isset($_GET["nbArtFirstArt"])) || ($_GET["nbArtFirstArt"] == 6)) {
-//     $nbArtFirstArt = 6;
-//     setcookie("nbArtFirstArt", $nbArtFirstArt, time() + (2592000));
-// } elseif ($_GET["nbArtFirstArt"] == 9) {
-//     $nbArtFirstArt = 9;
-//     setcookie("nbArtFirstArt", $nbArtFirstArt, time() + (2592000));
-// } else {
-//     $nbArtFirstArt = 12;
-//     setcookie("nbArtFirstArt", $nbArtFirstArt, time() + (2592000));
-// }
-
-
-// if ((!isset($_GET["nbArtSecondArt"])) || ($_GET["nbArtSecondArt"] == 6)) {
-//     $nbArtSecondArt = 6;
-//     setcookie("nbArtSecondArt", $nbArtSecondArt, time() + (2592000));
-// } elseif ($_GET["nbArtSecondArt"] == 9) {
-//     $nbArtSecondArt = 9;
-//     setcookie("nbArtSecondArt", $nbArtSecondArt, time() + (2592000));
-// } else {
-//     $nbArtSecondArt = 12;
-//     setcookie("nbArtSecondArt", $nbArtSecondArt, time() + (2592000));
-// }
-
-
-// if ((!isset($_GET["nbArtThirdArt"])) || ($_GET["nbArtThirdArt"] == 6)) {
-//     $nbArtThirdArt = 6;
-//     setcookie("nbArtThirdArt", $nbArtThirdArt, time() + (2592000));
-// } elseif ($_GET["nbArtThirdArt"] == 9) {
-//     $nbArtThirdArt = 9;
-//     setcookie("nbArtThirdArt", $nbArtThirdArt, time() + (2592000));
-// } else {
-//     $nbArtThirdArt = 12;
-//     setcookie("nbArtThirdArt", $nbArtThirdArt, time() + (2592000));
-// }
 
 ?>
 
@@ -99,14 +65,14 @@ include("includes/head.php");
     include("includes/header.php");
 ?>
 
-    <p id="pIntro">Voici votre flux personnalisé : (modifiable dans <a href="http://rss/parametres.php?">paramètres.)</a></p>
+    <p id="pIntro">Voici votre flux personnalisé : (modifiable dans <a href="parametres.php?">paramètres.)</a></p>
 
     <div class="row">
 
         <?php
 
     foreach ($xml as $url) {
-        echo "<h2>" . $url->channel->title . "</h2>";
+        echo "<h2 class='categoryTitle'>" . $url->channel->title . "</h2>";
         foreach ($url->channel->item as $item) {
             $content = $item->children('media', true)->content;
             $contentattr = $content->attributes();
