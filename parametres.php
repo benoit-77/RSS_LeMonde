@@ -130,9 +130,9 @@ include("includes/head.php");
 ?>
 
     <main>
-        <h2>Selectionnez les sujets qui vous intéressent</h2>
+        <h2 class="topicsChoiceTitle">Selectionnez les sujets qui vous intéressent</h2>
 
-        <form method="get">
+        <form method="get" class="topicsChoiceForm">
             <fieldset>
                 <legend>Emploi et économie :</legend>
                 <div class="choicesParameters">

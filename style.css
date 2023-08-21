@@ -1,13 +1,14 @@
 body {
     font-family: 'Yeseva One', cursive;
-    background-image: url("assets/img/white_paper_texture_v2.png");
+    /* background-image: url("assets/img/white_paper_texture_v2.png"); */
+    background-color: #265078;
 }
 
 h1 {
     font-size: 4em;
     text-align: center;
     margin: 4%;
-    color: rgba(8, 31, 45, 0.863);
+    color: #FBFCFA;
 }
 
 .navbar-nav {
@@ -20,6 +21,11 @@ h1 {
 
 .nav-item {
     font-size: 1.2em;
+    color: #FBFCFA;
+}
+
+.nav-item:hover {
+    color: #a9ddff;
 }
 
 hr {
@@ -29,21 +35,22 @@ hr {
 
 #pIntro {
     margin: 0 0 2% 10%;
-    color: rgba(8, 31, 45, 0.863);
+    color: #FBFCFA;
     font-size: 1.2em;
     font-style: italic;
 }
 
-.categoryTitle, h2 {
+.categoryTitle {
     margin: 1.2em auto 1.5em auto;
     text-align: center;
-    color: rgba(8, 31, 45, 0.863);
+    color: #FBFCFA;
     font-size: 2.5em;
 }
 
 .choice {
     text-align: center;
     font-size: 1.2em;
+    color: #C1C8E4;
 }
 
 .NbArtChoice {
@@ -53,6 +60,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    color: #C1C8E4;
 }
 
 @media screen and (max-width: 1200px) {
@@ -64,8 +72,17 @@ hr {
     }
     }
 
+.card-body {
+    background-color: #c1c8e47c;
+}
+
 .card-title {
     font-size: 1.8em;
+    color: #265078;
+}
+
+.card-text {
+    color: #265078;
 }
 
 img {
@@ -75,9 +92,19 @@ img {
     border: 2px solid rgba(8, 31, 45, 0.863);
 }
 
+.topicsChoiceTitle {
+    color: #FBFCFA;
+    text-align: center;
+}
+
+.topicsChoiceForm {
+    color: #C1C8E4;
+}
+
 #personalPage {
     text-align: center;
     margin: 2em auto 1em auto;
+    color: #C1C8E4;
 }
 
 legend {
@@ -103,9 +130,9 @@ label {
 button {
     width: 20%;
     margin: 5% 40%;
-    background-color: rgba(8, 31, 45, 0.863); 
+    background-color: #7395AE; 
     border-radius: 29px; 
-    border: 1px solid rgba(8, 31, 45, 0.863); 
+    border: 3px solid #C1C8E4; 
     color: white; 
     font-size: 15px; 
     padding: 10px 45px; 
@@ -114,7 +141,7 @@ button {
     }
     
 button:hover { 
-    background-color: white; 
+    background-color: #C1C8E4; 
     color: #081F2D; 
     border-color: #081F2D; 
     transition: 0.3s; 

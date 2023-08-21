@@ -65,7 +65,7 @@ include("includes/head.php");
     include("includes/header.php");
 ?>
 
-    <p id="pIntro">Voici votre flux personnalisé : (modifiable dans <a href="parametres.php?">paramètres.)</a></p>
+    <p id="pIntro">Voici votre flux personnalisé (modifiable dans <a href="parametres.php?">paramètres</a>) :</p>
 
     <div class="row">
 
